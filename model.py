@@ -6,7 +6,7 @@ import torch_geometric.nn as geom_nn
 from torch_geometric.nn import GATv2Conv, global_add_pool
 from torch_scatter import scatter_mean, scatter_add
 
-
+ 
 
 
 class GraphEncoder(nn.Module):
