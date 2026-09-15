@@ -48,15 +48,13 @@ class ReferenceDistributions(nn.Module):
         dist2 = (mu_diff**2 + sigma_diff**2).sum(dim=-1)
 
         weights = F.softmax(-dist2 / 0.15, dim=-1)  #tau =0.15
-        self.weight_history.append(weights.detach().cpu())
+        
         mu_proj = torch.einsum("bk,kd->bd", weights, self.mu_bases)
         sigma_proj = torch.einsum("bk,kd->bd", weights, sigma_b)
         sigma_proj = sigma_proj.clamp(min=1e-3, max = 2.0)
 
         return mu_proj, sigma_proj, weights, dist2
 
-    def clear_history(self):
-        self.weight_history.clear()
 
 
 

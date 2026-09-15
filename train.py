@@ -432,10 +432,10 @@ if wandb_tracking:
 
 
 if optim == 'Adam':
-    optimizer = torch.optim.Adam([{'params': Model.parameters()}, {'params': style_bases.parameters()}],
+    optimizer = torch.optim.Adam(Model.parameters(),
                                  lr=learning_rate, weight_decay=weight_decay)
 elif optim == 'Adagrad':
-    optimizer = torch.optim.Adagrad(Model.parameters(), learning_rate, weight_decay=weight_decay)
+    optimizer = torch.optim.Adagrad(Model.parameters(), lr=learning_rate, weight_decay=weight_decay)
 
 elif optim == 'SGD':
     optimizer = torch.optim.SGD(Model.parameters(), lr=learning_rate, momentum=0.9, weight_decay=weight_decay)
