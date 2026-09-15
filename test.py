@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from Dataset import *
 from torch_geometric.loader import DataLoader
-from WLRL18 import *
+from model import *
 from sklearn.linear_model import LinearRegression
 
 class RMSELoss(torch.nn.Module):
