@@ -1,5 +1,4 @@
-# WLRL
-Source code for "WLRL: Wasserstein latent representation learning for protein–ligand binding affinity prediction". 
+# WLRL: Wasserstein Latent Representation Learning for Protein-Ligand Binding Affinity Prediction
 
 This repository contains the implementation of "WLRL: Wasserstein latent representation learning for protein-ligand binding affinity prediction". WLRL models each protein-ligand complex as a latent distribution and aligns these distributions to a shared set of learnable reference distributions through the Wasserstein Barycentric Representation Operator (WBRO) with reference-usage regularization, aiming to reduce heterogeneity in protein-ligand complexes.
 
