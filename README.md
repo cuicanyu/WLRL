@@ -35,7 +35,7 @@ conda activate wlrl
 ## Data
 
 
-The precomputed graph datasets follow the GEMS graph construction procedure. GEMS datasets and preprocessing information are available from the [GEMS data archive](https://doi.org/10.5281/zenodo.15482796).
+The precomputed graph datasets follow the GEMS graph construction procedure. GEMS datasets and preprocessing information are available from the [GEMS data archive](https://github.com/camlab-ethz/GEMS).
 
 
 
